@@ -1,0 +1,52 @@
+:root {
+    /* primary */
+    --blue: hsl(246, 80%, 60%);
+    --color-work: hsl(15, 100%, 70%);
+    --color-play: hsl(195, 74%, 62%);
+    --color-study: hsl(348, 100%, 68%);
+    --color-exercise: hsl(145, 58%, 55%);
+    --color-social: hsl(264, 64%, 52%);
+    --color-care: hsl(43, 84%, 65%);
+
+    /*  neutral */
+    --veryDarkBlue: hsl(226, 43%, 10%);
+    --darkBlue: hsl(235, 46%, 20%);
+    --desatBlue: hsl(235, 45%, 61%);
+    --paleBlue: hsl(236, 100%, 87%);
+
+    /* weight */
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+
+    /* breakpoints */
+    --mobile: 37.5rem;
+    --desktop: 144rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 5rem;
+    font-family: "Rubik", sans-serif;
+    background-color: var(--veryDarkBlue);
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+}
+
+.App {
+    width: 100vw;
+    padding: 0 16.5rem;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 2;
+}
