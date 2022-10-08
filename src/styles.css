@@ -34,17 +34,17 @@
 body {
     width: 100vw;
     height: 100vh;
-    font-size: 5rem;
     font-family: "Rubik", sans-serif;
     background-color: var(--veryDarkBlue);
     color: #ffffff;
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 
 .App {
     width: 100%;
-    padding: 0 16.5rem;
+    padding: 0 15vw;
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -92,7 +92,7 @@ body {
 }
 
 .name {
-    padding: 3.2rem;
+    padding: 3.5vh 1.6vw;
     height: 35.4rem;
     background-color: var(--blue);
     z-index: 10;
@@ -109,11 +109,12 @@ body {
     -o-border-radius: 50%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-bottom: 4rem;
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .name span {
     font-weight: var(--regular);
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 1.1vw, 1.5rem);
     line-height: 1.8rem;
     display: block;
     margin-bottom: 0.3rem;
@@ -122,15 +123,15 @@ body {
 .name h1 {
     text-transform: capitalize;
     font-weight: var(--light);
-    font-size: 4rem;
+    font-size: clamp(3rem, 2.8vw, 4rem);
     line-height: 4.7rem;
 }
 
 .nav ul {
-    padding: 3.2rem;
+    padding: 3.5vh 1.6vw;
     list-style-type: none;
     font-weight: var(--regular);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 2.1rem;
     color: var(--desatBlue);
 }
@@ -165,7 +166,7 @@ body {
     background-color: var(--darkBlue);
     width: 100%;
     border-radius: 1.5rem;
-    padding: 3rem;
+    padding: 3.2vh 1.5vw;
     -webkit-border-radius: 1.5rem;
     -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
@@ -185,7 +186,7 @@ body {
 }
 .title h2 {
     font-weight: var(--medium);
-    font-size: 1.8rem;
+    font-size: clamp(1.2rem, 1.1vw, 1.5rem);
     line-height: 2.1rem;
     text-transform: capitalize;
 }
@@ -196,15 +197,16 @@ body {
 
 .time {
     font-weight: var(--light);
-    font-size: 2.6rem;
+    font-size: clamp(2rem, 1.8vw, 2.6rem);
     line-height: 6.6rem;
     margin-top: 2.4rem;
     margin-bottom: 0.8rem;
 }
 .comparison {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 1.1vw, 1.5rem);
     font-weight: var(--regular);
     color: var(--paleBlue);
+    white-space: nowrap;
 }
 
 .work {
@@ -229,4 +231,10 @@ body {
 
 .care {
     background-color: var(--color-care);
+}
+
+@media screen and (max-width: 765px) {
+    .data {
+        display: flex;
+    }
 }

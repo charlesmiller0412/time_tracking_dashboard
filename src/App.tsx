@@ -61,6 +61,7 @@ function App() {
                     </ul>
                 </nav>
             </div>
+            {/* work */}
             <div className="card">
                 <div className="card__image work">
                     <img src={Images.work} alt="play icon" className="icon" />
@@ -70,21 +71,24 @@ function App() {
                         <h2>work</h2>
                         <img src={Images.ellipsis} alt="menu button" />
                     </div>
-                    <div className="time">
-                        {data[0].timeframes[interval].current}hrs
-                    </div>
-                    <div className="comparison">
-                        {interval === "daily"
-                            ? "Yesterday - "
-                            : interval === "weekly"
-                            ? "Last Week - "
-                            : interval === "monthly"
-                            ? "Last Month - "
-                            : ""}
-                        {data[0].timeframes[interval].previous}hrs
+                    <div className="data">
+                        <div className="time">
+                            {data[0].timeframes[interval].current}hrs
+                        </div>
+                        <div className="comparison">
+                            {interval === "daily"
+                                ? "Yesterday - "
+                                : interval === "weekly"
+                                ? "Last Week - "
+                                : interval === "monthly"
+                                ? "Last Month - "
+                                : ""}
+                            {data[0].timeframes[interval].previous}hrs
+                        </div>
                     </div>
                 </div>
             </div>
+            {/* play */}
             <div className="card">
                 <div className="card__image play">
                     <img src={Images.play} alt="play icon" className="icon" />
@@ -94,21 +98,24 @@ function App() {
                         <h2>play</h2>
                         <img src={Images.ellipsis} alt="menu button" />
                     </div>
-                    <div className="time">
-                        {data[1].timeframes[interval].current}hrs
-                    </div>
-                    <div className="comparison">
-                        {interval === "daily"
-                            ? "Yesterday - "
-                            : interval === "weekly"
-                            ? "Last Week - "
-                            : interval === "monthly"
-                            ? "Last Month - "
-                            : ""}
-                        {data[1].timeframes[interval].previous}hrs
+                    <div className="data">
+                        <div className="time">
+                            {data[1].timeframes[interval].current}hrs
+                        </div>
+                        <div className="comparison">
+                            {interval === "daily"
+                                ? "Yesterday - "
+                                : interval === "weekly"
+                                ? "Last Week - "
+                                : interval === "monthly"
+                                ? "Last Month - "
+                                : ""}
+                            {data[1].timeframes[interval].previous}hrs
+                        </div>
                     </div>
                 </div>
             </div>
+            {/* study */}
             <div className="card">
                 <div className="card__image study">
                     <img src={Images.study} alt="play icon" className="icon" />
@@ -118,21 +125,24 @@ function App() {
                         <h2>study</h2>
                         <img src={Images.ellipsis} alt="menu button" />
                     </div>
-                    <div className="time">
-                        {data[2].timeframes[interval].current}hrs
-                    </div>
-                    <div className="comparison">
-                        {interval === "daily"
-                            ? "Yesterday - "
-                            : interval === "weekly"
-                            ? "Last Week - "
-                            : interval === "monthly"
-                            ? "Last Month - "
-                            : ""}
-                        {data[2].timeframes[interval].previous}hrs
+                    <div className="data">
+                        <div className="time">
+                            {data[2].timeframes[interval].current}hrs
+                        </div>
+                        <div className="comparison">
+                            {interval === "daily"
+                                ? "Yesterday - "
+                                : interval === "weekly"
+                                ? "Last Week - "
+                                : interval === "monthly"
+                                ? "Last Month - "
+                                : ""}
+                            {data[2].timeframes[interval].previous}hrs
+                        </div>
                     </div>
                 </div>
             </div>
+            {/* exercise */}
             <div className="card">
                 <div className="card__image exercise">
                     <img
@@ -146,21 +156,24 @@ function App() {
                         <h2>exercise</h2>
                         <img src={Images.ellipsis} alt="menu button" />
                     </div>
-                    <div className="time">
-                        {data[3].timeframes[interval].current}hrs
-                    </div>
-                    <div className="comparison">
-                        {interval === "daily"
-                            ? "Yesterday - "
-                            : interval === "weekly"
-                            ? "Last Week - "
-                            : interval === "monthly"
-                            ? "Last Month - "
-                            : ""}
-                        {data[3].timeframes[interval].previous}hrs
+                    <div className="data">
+                        <div className="time">
+                            {data[3].timeframes[interval].current}hrs
+                        </div>
+                        <div className="comparison">
+                            {interval === "daily"
+                                ? "Yesterday - "
+                                : interval === "weekly"
+                                ? "Last Week - "
+                                : interval === "monthly"
+                                ? "Last Month - "
+                                : ""}
+                            {data[3].timeframes[interval].previous}hrs
+                        </div>
                     </div>
                 </div>
             </div>
+            {/* social */}
             <div className="card">
                 <div className="card__image social">
                     <img src={Images.social} alt="play icon" className="icon" />
@@ -170,21 +183,24 @@ function App() {
                         <h2>social</h2>
                         <img src={Images.ellipsis} alt="menu button" />
                     </div>
-                    <div className="time">
-                        {data[4].timeframes[interval].current}hrs
-                    </div>
-                    <div className="comparison">
-                        {interval === "daily"
-                            ? "Yesterday - "
-                            : interval === "weekly"
-                            ? "Last Week - "
-                            : interval === "monthly"
-                            ? "Last Month - "
-                            : ""}
-                        {data[4].timeframes[interval].previous}hrs
+                    <div className="data">
+                        <div className="time">
+                            {data[4].timeframes[interval].current}hrs
+                        </div>
+                        <div className="comparison">
+                            {interval === "daily"
+                                ? "Yesterday - "
+                                : interval === "weekly"
+                                ? "Last Week - "
+                                : interval === "monthly"
+                                ? "Last Month - "
+                                : ""}
+                            {data[4].timeframes[interval].previous}hrs
+                        </div>
                     </div>
                 </div>
             </div>
+            {/* self care */}
             <div className="card">
                 <div className="card__image care">
                     <img
@@ -198,18 +214,20 @@ function App() {
                         <h2>self care</h2>
                         <img src={Images.ellipsis} alt="menu button" />
                     </div>
-                    <div className="time">
-                        {data[5].timeframes[interval].current}hrs
-                    </div>
-                    <div className="comparison">
-                        {interval === "daily"
-                            ? "Yesterday - "
-                            : interval === "weekly"
-                            ? "Last Week - "
-                            : interval === "monthly"
-                            ? "Last Month - "
-                            : ""}
-                        {data[5].timeframes[interval].previous}hrs
+                    <div className="data">
+                        <div className="time">
+                            {data[5].timeframes[interval].current}hrs
+                        </div>
+                        <div className="comparison">
+                            {interval === "daily"
+                                ? "Yesterday - "
+                                : interval === "weekly"
+                                ? "Last Week - "
+                                : interval === "monthly"
+                                ? "Last Month - "
+                                : ""}
+                            {data[5].timeframes[interval].previous}hrs
+                        </div>
                     </div>
                 </div>
             </div>
