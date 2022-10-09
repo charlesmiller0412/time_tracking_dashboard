@@ -44,7 +44,6 @@ body {
 
 .App {
     width: 100%;
-    padding: 0 15vw;
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -114,7 +113,7 @@ body {
 
 .name span {
     font-weight: var(--regular);
-    font-size: clamp(1.2rem, 1.1vw, 1.5rem);
+    font-size: 1.5rem;
     line-height: 1.8rem;
     display: block;
     margin-bottom: 0.3rem;
@@ -124,7 +123,7 @@ body {
 .name h1 {
     text-transform: capitalize;
     font-weight: var(--light);
-    font-size: clamp(3rem, 2.8vw, 4rem);
+    font-size: 4rem;
     line-height: 4.7rem;
 }
 
@@ -187,7 +186,7 @@ body {
 }
 .title h2 {
     font-weight: var(--medium);
-    font-size: clamp(1.2rem, 1.1vw, 1.5rem);
+    font-size: 1.8rem;
     line-height: 2.1rem;
     text-transform: capitalize;
 }
@@ -198,13 +197,13 @@ body {
 
 .time {
     font-weight: var(--light);
-    font-size: clamp(2rem, 1.5vw, 2.6rem);
+    font-size: 5.6rem;
     line-height: 6.6rem;
     margin-top: 2.4rem;
     margin-bottom: 0.8rem;
 }
 .comparison {
-    font-size: clamp(1.2rem, 1.1vw, 1.5rem);
+    font-size: 1.5rem;
     font-weight: var(--regular);
     color: var(--paleBlue);
     white-space: nowrap;
@@ -235,7 +234,7 @@ body {
 }
 
 @media screen and (max-width: 765px) {
-    h1 {
+    .name h1 {
         font-size: 2.4rem;
         font-weight: var(--light);
         line-height: auto;
