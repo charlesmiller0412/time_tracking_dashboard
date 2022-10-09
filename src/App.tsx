@@ -25,8 +25,10 @@ function App() {
             <div className="profile">
                 <div className="card name">
                     <img src={jeremy} alt="profile pic" />
-                    <span>Report for</span>
-                    <h1>jeremy robson</h1>
+                    <div className="div">
+                        <span>Report for</span>
+                        <h1>jeremy robson</h1>
+                    </div>
                 </div>
                 <nav className="nav">
                     <ul>

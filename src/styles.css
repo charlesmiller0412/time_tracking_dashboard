@@ -118,6 +118,7 @@ body {
     line-height: 1.8rem;
     display: block;
     margin-bottom: 0.3rem;
+    color: var(--paleBlue);
 }
 
 .name h1 {
@@ -131,7 +132,7 @@ body {
     padding: 3.5vh 1.6vw;
     list-style-type: none;
     font-weight: var(--regular);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 2.1rem;
     color: var(--desatBlue);
 }
@@ -234,7 +235,78 @@ body {
 }
 
 @media screen and (max-width: 765px) {
+    h1 {
+        font-size: 2.4rem;
+        font-weight: var(--light);
+        line-height: auto;
+    }
+    h2 {
+        font-size: 1.8rem;
+        line-height: auto;
+    }
+    body {
+        overflow-y: visible;
+    }
+    .App {
+        grid-template-columns: 1fr;
+        padding: 8rem 2.4rem;
+        place-items: center;
+    }
+    .card {
+        flex-direction: row;
+        min-width: 32.7rem;
+        height: 16rem;
+    }
+    .comparison {
+        font-size: 1.5rem;
+        line-height: auto;
+    }
     .data {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .name {
+        height: 13.3rem;
+        justify-content: center;
+    }
+    .name img {
+        width: 6.4rem;
+        height: 6.4rem;
+        margin-right: 2rem;
+    }
+    .name span {
+        font-size: 1.5rem;
+        line-height: auto;
+    }
+    .nav {
+        width: 100%;
+        height: 100%;
+    }
+    .nav ul {
+        display: grid;
+        height: 7rem;
+        place-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 1.8rem;
+        line-height: auto;
+        font-weight: var(--regular);
+        padding: 0;
+    }
+    .nav ul li:nth-of-type(2) {
+        margin: 0;
+    }
+    .profile {
+        height: 20rem;
+    }
+    .stats {
+        height: 12.2rem;
+        padding: 2.4rem;
+    }
+    .time {
+        margin: 0;
+        font-size: 3.2rem;
+        font-family: var(--light);
+        line-height: auto;
     }
 }
